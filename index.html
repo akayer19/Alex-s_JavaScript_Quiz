@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JavaScript Quiz</title>
+</head>
+<body>
+    <section class="container">
+        <div>
+            <h2>JavaScript Quiz</h2>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 15 seconds!</p>
+            <div>
+                <button id="start-btn">Start Quiz</button>
+                <div id="question-container"></div>
+                <div id="result-container"></div>
+                <div id="score-container">
+                    <p>Your current score: <span id="current-score">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="quiz-container">
+        <!-- Add this somewhere in your HTML -->
+        <div id="timer-display">Time Left: 75s</div>
+    </div>
+
+    <form id="quizform">
+        <!-- Include any form elements you need here -->
+    </form>
+
+    <!-- Add High Scores button and screen -->
+    <button id="high-scores-btn">High Scores</button>
+    <div id="high-scores-screen" style="display: none;"></div>
+
+    <!-- Add Back to Quiz button -->
+    <button id="back-to-quiz-btn" style="display: none;">Back to Quiz</button>
+
+    <script src="./assets/css/script.js"></script>
+
+    <form id="initials-form">
+        <label for="initials">Enter Initials:</label>
+        <input type="text" id="initials" name="initials" maxlength="3" required>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
